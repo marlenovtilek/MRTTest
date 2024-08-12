@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="about_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about_taital">
+          <h4 class="about_text">О нас</h4>
+          <h1 class="highest_text">Высшее обеспечивание медицинского обслуживания</h1>
+          <p class="lorem_text">В нашей клинике мы гордимся высоким уровнем медицинской помощи, предоставляемой ведущими специалистами. Мы предлагаем передовую диагностику, включая МРТ головного мозга, и комплексное лечение, гарантируя каждому пациенту индивидуальный подход и наивысшее качество заботы. Ваше здоровье – наша главная ценность!</p>
+          <div class="read_bt"><a href="#">Подробно</a></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image_2" href="#"><img src="{% static 'images/neurephoto.jpg' %}"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

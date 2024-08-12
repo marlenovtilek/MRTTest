@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="services_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="call_box">
+          <div class="call_image"><img src="{% static 'images/call-icon.png' %}"></div>
+          <h2 class="emergency_text">Экстренные случаи</h2>
+          <h1 class="call_text">0312-434-368</h1>
+          <p class="dolor_text">Экстренная ситуация? Не откладывайте заботу о своем здоровье!</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="call_box active">
+          <div class="call_image"><img src="{% static 'images/time-seat-icon.png' %}"></div>
+          <h2 class="emergency_text">Расписание врачей</h2>
+          <h1 class="call_text">0312-434-368</h1>
+          <p class="dolor_text">Планируйте свою диагностику МРТ удобно! Запишитесь на удобное время по телефону!</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="call_box">
+          <div class="call_image"><img src="{% static 'images/watch-icon.png' %}"></div>
+          <h2 class="emergency_text">Часы работы</h2>
+          <h1 class="call_text">0312-434-368</h1>
+          <p class="dolor_text">Гибкие часы работы для вашего комфорта! Наши двери открыты, чтобы вы могли получить МРТ!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="doctor_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 padding_top0">
+        <h4 class="about_text">Лучшая лаборатория</h4>
+          <h1 class="highest_text">Доступные тесты</h1>
+          <p class="lorem_text">Лучшая лаборатория – доступные тесты" – наша клиника гордится самой современной лабораторией, где проводятся точные и быстрые анализы. Мы предлагаем широкий спектр доступных тестов, обеспечивая каждому пациенту высокое качество диагностики по приемлемым ценам. Ваше здоровье – наша главная забота!</p>
+          <div class="read_main">
+            <div class="read_bt"><a href="#">Подробно</a></div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image_4"><img src="{% static 'images/img-4.png' %}"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

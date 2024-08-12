@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body>	
+	<div class="contact_section layout_padding">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+			<h1 class="contact_text">Вход в New life</h1>
+				<form action="#" method="post">
+					{% csrf_token %}
+					<div class="form-group">
+						<input type="text" name="username" class="email-bt" placeholder="Имя пользователя" required />
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" class="email-bt" placeholder="Пароль" required=""/>
+					</div>
+					<div class="form-group">
+						<a class="forgot" href="">Забыли пароль?</a>
+					</div>
+					<button class="btn btn-primary btn-lg btn-block" type="submit">Войти</button>
+				</form>
+			</div>
+			</div>	
+		</div>
+	</div>
+</body>
+{% endblock content %}
+

@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+<body>
+    <div class="contact_section layout_padding">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            <h1 class="contact_text">Регистрация в New Life</h1>
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="email-bt" name="username" placeholder="Имя пользователя" pattern="[a-zA-Z]+" title="Только латинские буквы разрешены" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Имя" name="first_name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Фамилия" name="last_name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Электронная почта" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="email-bt" name="phone_number" placeholder="Телефонный номер" pattern="[0-9+-() ]*" title="Только цифры и знак плюса разрешены" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Адрес проживания" name="address" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="email-bt" placeholder="Дата рождения" name="birthday" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="email-bt" placeholder="Пароль" name="password" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="email-bt" placeholder="Повторите пароль" name="password1" required />
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+            </div>	
+        </div>
+    </div>
+</body>
+
+{% endblock content %}
